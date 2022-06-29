@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding:0 80px;
+    margin:auto;
+}
+
+/* nav bar styling */
+.navbar{
+    position:fixed;
+    width:100%;
+    padding:15px 0;
+    font-family: 'ubuntu',sans-serif;
+    /* z-index: 999; */
+    /* background: grey; */
+    transition:all 0.3s ease;
+
+}
+.navbar.sticky{
+    padding:1px 0;
+    background: grey;
+}
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: blue;
+    font-size:18px;
+    font-weight:500;
+    margin-left: 25px;
+}
+.navbar .menu li a:hover{
+    background-color:yellow;
+    color:black;
+    
+}
+
+/* home section styling */
+.home{
+    display:flex;
+    /* background:url("images/main-backgroung.png") center ; */
+    height:100vh;
+    font-family: 'italic';
+}
+.home .max-width{
+    margin:auto 0 auto 50px;
+}
+.home span{
+    color: rgb(77, 77, 195);
+}
+.home a{
+    background: black;
+    padding:10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius:5px;
+}
+
+.home .text-1 .text-2{
+    font-size:38px;
+    font-weight: bold;
+    align-items: center;
+}
+/* About section styling */
+
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family:'poppins',sans-serif;
+}
+.about .title{
+    text-align: center;
+    
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    font-family: 'poppins',sans-serif;
+}
+.about .title::before{
+    content:"";
+    position:absolute;
+    width:150px;
+    height:3px;
+    background:black;
+    left:50%;
+    bottom:-150px;
+    transform:translateX(-50%)
+}
+
+.about .title::after{
+    content:"who i am";
+    position:absolute;
+    background:white;
+    left:50%;
+    padding:5px;
+    font-size:15px;
+    color:rgb(78, 78, 212);
+    bottom : -165px;
+    transform:translateX(-50%)
+}
+.about .about-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width:45%;
+}
+.about .about-content .left img{
+height:100px;
+width:100px;
+border-radius:7px;
+object-fit: cover;
+
+}
+.about .about-content .left h2{
+    text-decoration:underline
+}
+.about a{
+    background: rgb(239, 236, 236);
+    padding:5px 18px;
+    text-decoration: none;
+    /* font-weight: bold; */
+    color: black;
+    display: inline-block;
+    margin: 2px 0;
+    border-radius:5px;
+}
+.about .data{
+    font-family: 'italic';
+    display:inline-block;
+    font-weight: bold;
+    font-size:15px;
+    color:rgb(39, 39, 236);
+    justify-content: center;
+    padding:20px 18px ;
+}
+
+.about .sample{
+    display:inline-block;
+}
+.about .about-content .right{
+    width:55%;
+}
+.about .about-content p{
+    font-family: 'italic';
+    font-size:18px;
+    text-align:justify
+}
+/* .about .about-content .column{
+    width:50%;
+} */
+
+/* projects section styling */
+
+.projects{
+    font-family:'poppins',sans-serif;
+}
+
+.projects .title{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    font-family: 'poppins',sans-serif;
+}
+.projects ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.projects-content span{
+    color: blue;
+}
+.projects-content ul p{
+    font-family: 'italic',sans-serif;
+
+}
+.caret {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+    transform: rotate(90deg);  
+  }
+  .nested {
+    display: none;
+  }
+  
+.active {
+    display: block;
+  }
+
+
+
+
+
+/* Footer styling */
+
+footer{
+    background-color:grey; 
+    color: black; 
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding: 4px 0; 
+    text-align: center; 
+}
+footer ul{
+    margin:25px 0px;
+}
+footer  li{
+    list-style: none; 
+    display: inline-block;
+    margin: 0px 20px;
+    height:3px;
+    align-items: center;
+    justify-content: center;
+    width:3%;
+}
+footer a{ 
+    color: blue;
+}
